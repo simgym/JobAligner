@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 100%;
+  background-color: white;
+  color: #0047ab;
+  /* padding-right: 1%;
+  padding-left: 0.5%; */
+}
+.wrapper h1 {
+  /* font-size: xx-large; */
+  font-size: 30px;
+  /* border: 1px solid black; */
+  flex: 2;
+  padding-left: 0.5%;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  /* gap: 10%; */
+  align-items: center;
+  /* border: 1px solid red; */
+  flex: 1;
+}
+.services span {
+  cursor: pointer;
+  /* border: 1px solid black; */
+  padding-right: 0.5%;
+}
+.AddResume {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .wrapper h1 {
+    font-size: 25px;
+    flex: 1;
+  }
+  .services {
+    gap: 5%;
+  }
+  .services span p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper h1 {
+    font-size: 35px;
+  }
+  .services {
+    gap: 10%;
+  }
+  .services span p {
+    font-size: 15px;
+  }
+}

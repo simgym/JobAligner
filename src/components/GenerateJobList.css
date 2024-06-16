@@ -1,0 +1,96 @@
+.jobWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+.RelatedJobHeading {
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 1.2em;
+}
+.jobCard {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.jobLogoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  gap: 1%;
+}
+.jobLogo img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  /* border: 1px solid black; */
+  flex: 1;
+}
+
+.jobTitle {
+  font-family: "Lexend", sans-serif;
+  color: #0047ab;
+  font-weight: 600;
+  /* border: 1px solid red; */
+  text-align: right;
+  flex: 2;
+  font-size: 1.5em;
+}
+.jobCompany {
+  /* border: 1px solid green; */
+  text-align: center;
+  color: rgb(106, 106, 106);
+  font-size: 1.1em;
+}
+.jobTypeStatus {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+.jobActive {
+  color: green;
+  font-size: 1.05em;
+}
+.jobExpired {
+  color: red;
+}
+.ApplyLink {
+  /* border: 1px solid red; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+  width: 100%;
+}
+.ApplyLink span {
+  border: 1px solid black;
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #0047ab;
+}
+.ApplyLink a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .jobWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .jobWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.4%;
+  }
+}

@@ -1,0 +1,30 @@
+.missionWrapper p {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: #0047ab;
+  width: 100%;
+}
+.missionWrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  /* background-color: white; */
+  padding-left: 2%;
+  padding-right: 2%;
+  min-height: 250px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .missionWrapper p {
+    font-size: 1em;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 769px) {
+  .missionWrapper p {
+    font-size: 1.5em;
+  }
+}
